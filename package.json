@@ -1,0 +1,39 @@
+{
+  "name": "looker-visualization-api-examples",
+  "version": "2.0.20",
+  "license": "MIT",
+  "description": "A selection of sample visualizations for use as Looker visualizations",
+  "main": "demo/index.html",
+  "directories": {
+    "lib": "lib",
+    "test": "tests"
+  },
+  "scripts": {
+    "build": "webpack --config webpack.config.js",
+    "start": "webpack-dev-server --https",
+    "watch": "webpack --config webpack.config.js --watch --progress",
+    "lint": "tslint --project tsconfig.json --format stylish 'src/**/*.ts'",
+    "lint-fix": "tslint --fix --project tsconfig.json  --format stylish 'src/**/*.ts'",
+    "test": "jest"
+  },
+  "author": "",
+  "private": true,
+  "devDependencies": {
+    "css-loader": "^0.28.11",
+    "uglifyjs-webpack-plugin": "^1.2.5",
+    "webpack": "4.41.2",
+    "webpack-cli": "^3.3.10",
+    "webpack-dev-server": "3.9.0"
+  },
+  "dependencies": {
+    "@babel/core": "^7.7.2",
+    "@babel/preset-env": "^7.7.1",
+    "@babel/preset-react": "^7.7.0",
+    "babel-loader": "^8.0.6",
+    "lodash": "^4.17.15",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "react-map-gl": "^5.2.3",
+    "to-string-loader": "^1.1.6"
+  }
+}
